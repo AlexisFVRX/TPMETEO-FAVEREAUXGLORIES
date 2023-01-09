@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_insetEdge="none">
+
+    <TextView
+        android:id="@+id/textViewtemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="Vos dernières recherches :"
+        android:textColor="#83AEE0"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:fadingEdge="none"
+        android:requiresFadingEdge="none"
+        app:srcCompat="@drawable/capture_d_cran_2022_12_05___11_37_12" />
+
+    <TextView
+        android:id="@+id/textViewtitre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="METE'ORAGE"
+        android:textColor="#FEDD2B"
+        android:textColorLink="#FEDD2B"
+        android:textSize="48sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="114dp"
+        android:layout_height="118dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/m__t__o_project_removebg_preview_2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="412dp"
+        android:layout_height="117dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewtemp2"
+        app:srcCompat="@drawable/capture_d___cran_2023_01_02____16_24_53_removebg_preview" />
+
+    <TextView
+        android:id="@+id/HisVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="Ville"
+        android:textColor="#FEDD2B"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <TextView
+        android:id="@+id/HisTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="Température"
+        android:textColor="#FEDD2B"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <TextView
+        android:id="@+id/HisCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="Condition"
+        android:textColor="#FEDD2B"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

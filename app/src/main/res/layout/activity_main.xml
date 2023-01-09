@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/boutonPage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEDD2B"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/police"
+        android:onClick="PageHistorique"
+        android:text="Une autre localisation ?"
+        android:textColor="#83AEE0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/ETville2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName"
+        android:text="Ville"
+        android:textAlignment="center"
+        android:textColor="#FEDD2B"
+        android:textDirection="firstStrongRtl"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        app:srcCompat="@drawable/capture_d_cran_2022_12_05___11_37_12" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="114dp"
+        android:layout_height="118dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/m__t__o_project_removebg_preview_2" />
+
+    <TextView
+        android:id="@+id/textViewtitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="METE'ORAGE"
+        android:textColor="#FEDD2B"
+        android:textColorLink="#FEDD2B"
+        android:textSize="48sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <TextView
+        android:id="@+id/textViewCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="Condition"
+        android:textColor="#83AEE0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewtemp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="336dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETville2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/police"
+        android:text="Température"
+        android:textColor="#83AEE0"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEDD2B"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/police"
+        android:onClick="click"
+        android:text="Rechercher"
+        android:textColor="#83AEE0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCond" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCond">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="23dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:rotationX="180"
+            app:srcCompat="@drawable/fleche" />
+
+        <TextView
+            android:id="@+id/TVtmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temp Min"
+            android:textColor="#00E2FF" />
+
+        <TextView
+            android:id="@+id/TVtmax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="115dp"
+            android:text="Temp max"
+            android:textColor="#FF0000" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="23dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:rotationX="0"
+            app:srcCompat="@drawable/fleche" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
