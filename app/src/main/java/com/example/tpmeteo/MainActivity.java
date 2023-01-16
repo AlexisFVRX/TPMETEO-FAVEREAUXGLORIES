@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
         queue.add(stringRequest);
 
-        bd.insertData(editTextVille.getText().toString(), textView2.getText().toString(), textView.getText().toString());
+        //bd.insertData(editTextVille.getText().toString(), textView2.getText().toString(), textView.getText().toString());
     }
     public void PageHistorique (View view){
         Intent intent1 = new Intent(this, Historique.class);

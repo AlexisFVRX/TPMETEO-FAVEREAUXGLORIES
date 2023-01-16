@@ -50,6 +50,12 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:srcCompat="@drawable/m__t__o_project_removebg_preview_2" />
 
+    <Spinner
+        android:id="@+id/spinnerVille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="412dp"
